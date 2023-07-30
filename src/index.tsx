@@ -3,6 +3,8 @@ import {ThemeProvider} from 'styled-components/native';
 import Navigation from '@navigation';
 import {theme as themeStyles} from '@theme/colors';
 import {spacing} from './theme/spacing';
+import {Provider} from 'react-redux';
+import store from '@redux/store';
 
 type Theme = 'light' | 'dark';
 type ThemeContextType = {theme: Theme; toggleTheme: () => void};
@@ -25,8 +27,11 @@ const App = () => {
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>
       <ThemeProvider theme={{...themeMode, ...spacing}}>
-        {/* navigation */}
-        <Navigation />
+        {/* redux-provider */}
+        <Provider store={store}>
+          {/* navigation */}
+          <Navigation />
+        </Provider>
       </ThemeProvider>
     </ThemeContext.Provider>
   );

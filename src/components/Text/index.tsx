@@ -9,7 +9,7 @@ type TextProps = {
 // Title component with spacing size 'fontPrimary' (24px) and color prop
 export const Title = styled.Text<TextProps>`
   font-size: ${({fontSize}) => spacing[fontSize || 'fontPrimary']}px;
-  font-weight: 700;
+  font-weight: 500;
   color: ${props =>
     props?.color ? props?.theme[props?.color] : props?.theme?.textPrimary};
 `;
@@ -25,7 +25,6 @@ export const Subtitle = styled.Text<TextProps>`
 // Label component with spacing size 'fontTertiary' (16px) and color prop
 export const Label = styled.Text<TextProps>`
   font-size: ${({fontSize}) => spacing[fontSize || 'fontTertiary']}px;
-  font-weight: 700;
   color: ${props =>
     props?.color ? props?.theme[props?.color] : props?.theme?.textSecondary};
 `;
@@ -56,8 +55,7 @@ export const ErrorText = styled.Text<TextProps>`
 
 // CompletedTodo component with spacing size 'fontQuinary' (12px) and color prop
 export const CompletedTodo = styled.Text<TextProps>`
-  font-size: ${({fontSize}) => spacing[fontSize || 'fontQuinary']}px;
-  font-weight: 400;
+  font-size: ${({fontSize}) => spacing[fontSize || 'fontTertiary']}px;
   color: ${props =>
     props?.color ? props?.theme[props?.color] : props?.theme?.grey};
   text-decoration: line-through;
