@@ -21,6 +21,7 @@
     "react-native-screens": "^3.23.0",
     "react-redux": "^8.1.2",
     "redux": "^4.2.1",
+    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.2",
     "styled-components": "^6.0.5"
   },

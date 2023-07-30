@@ -4,7 +4,8 @@ import Navigation from '@navigation';
 import {theme as themeStyles} from '@theme/colors';
 import {spacing} from './theme/spacing';
 import {Provider} from 'react-redux';
-import store from '@redux/store';
+import {store, persistor} from '@redux/store';
+import {PersistGate} from 'redux-persist/integration/react';
 
 type Theme = 'light' | 'dark';
 type ThemeContextType = {theme: Theme; toggleTheme: () => void};
@@ -29,8 +30,10 @@ const App = () => {
       <ThemeProvider theme={{...themeMode, ...spacing}}>
         {/* redux-provider */}
         <Provider store={store}>
-          {/* navigation */}
-          <Navigation />
+          <PersistGate persistor={persistor}>
+            {/* navigation */}
+            <Navigation />
+          </PersistGate>
         </Provider>
       </ThemeProvider>
     </ThemeContext.Provider>
