@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import {spacing} from './spacing';
+import {spacing} from '@theme/spacing';
 
 type TextProps = {
   color?: string;
