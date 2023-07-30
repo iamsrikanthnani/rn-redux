@@ -20,7 +20,6 @@ This directory is responsible for all the global style definitions, including th
 
 - **spacing.tsx**: Defines the different spacings used throughout the app.
 - **theme.tsx**: Contains the dark and light theme configurations for styled-components.
-- **typography.tsx**: This file is for defining font sizes, weights, and font families.
 
 ### 📱app
 
