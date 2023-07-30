@@ -3,9 +3,9 @@
 Welcome to **rn-redux**! This React Native project has been bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli), and Redux is used for efficient and intuitive state management.
 
 <p float="left">
-  <img src="/images/Screenshot-1.png" width="100" />
-  <img src="/images/Screenshot-2.png" width="100" /> 
-  <img src="/images/Screenshot-3.png" width="100" />
+  <img src="/images/Screenshot-1.png" width="250" />
+  <img src="/images/Screenshot-2.png" width="250" /> 
+  <img src="/images/Screenshot-3.png" width="250" />
 </p>
 
 <a href="https://vimeo.com/849956455?share=copy" target="_blank">Simulator Screen Recording</a>
