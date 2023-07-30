@@ -13,6 +13,7 @@ export const theme = {
     textError: '#D32F2F',
     textOnPrimary: '#FFFFFF',
     textOnSecondary: '#000000',
+    done: 'rgba(75, 181, 67,0.5)',
   },
   dark: {
     primary: '#212121',
@@ -28,5 +29,6 @@ export const theme = {
     textError: '#F8BBD0',
     textOnPrimary: '#000000',
     textOnSecondary: '#FFFFFF',
+    done: 'rgba(75, 181, 67,0.5)',
   },
 };
