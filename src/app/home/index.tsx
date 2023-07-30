@@ -10,7 +10,7 @@ import {
   ErrorText,
   CompletedTodo,
   HighlightedText,
-} from '@theme/typography';
+} from '@components';
 
 const Home = () => {
   return (
