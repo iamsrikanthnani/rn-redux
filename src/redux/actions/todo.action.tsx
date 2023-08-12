@@ -1,5 +1,5 @@
 import {
-  Todo,
+  TodoType,
   ADD_TODO,
   DELETE_TODO,
   UPDATE_STATUS,
@@ -8,7 +8,7 @@ import {
 } from '@redux/types';
 
 // add todo
-export function addTodo(newTodo: Todo): TodoActionTypes {
+export function addTodo(newTodo: TodoType): TodoActionTypes {
   return {
     type: ADD_TODO,
     payload: newTodo,
@@ -16,7 +16,7 @@ export function addTodo(newTodo: Todo): TodoActionTypes {
 }
 
 // delete todo
-export function deleteTodo(todo: Todo): TodoActionTypes {
+export function deleteTodo(todo: TodoType): TodoActionTypes {
   return {
     type: DELETE_TODO,
     payload: todo,
