@@ -3,7 +3,7 @@ export const DELETE_TODO = 'DELETE_TODO';
 export const UPDATE_STATUS = 'UPDATE_STATUS';
 export const RENAME_TODO = 'RENAME_TODO';
 
-export interface Todo {
+export interface TodoType {
   id: number;
   title: string;
   status: 'todo' | 'completed';

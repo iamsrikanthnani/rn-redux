@@ -1,5 +1,5 @@
 import {
-  Todo,
+  TodoType,
   ADD_TODO,
   DELETE_TODO,
   UPDATE_STATUS,
@@ -8,8 +8,8 @@ import {
 } from '@redux/types';
 
 interface TodoState {
-  todos: Todo[];
-  completeds: Todo[];
+  todos: TodoType[];
+  completeds: TodoType[];
 }
 
 const initialState: TodoState = {

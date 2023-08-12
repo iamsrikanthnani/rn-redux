@@ -6,3 +6,8 @@ export const Container = styled.View`
     ${props => props.theme.sizeSecondary}px
     ${props => props.theme.sizeSecondary}px;
 `;
+
+export const RowContainer = styled.View`
+  flex-direction: row;
+  margin-bottom: 8px;
+`;
